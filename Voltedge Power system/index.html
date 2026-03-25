@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoltEdge Power Systems</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300;600&display=swap"
+        rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="VoltEdge Logo" class="logo-img">
+            <span class="animated-logo-text">VoltEdge Power Systems</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact-ceo">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Powering Industries with Precision & Reliability</h1>
+            <p>High-performance panels engineered for safety and efficiency</p>
+            <div class="hero-buttons">
+                <button onclick="scrollToSection('products')" class="secondary">Explore Products</button>
+                <button onclick="alert('Brochure will be available soon')">Download Brochure</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section">
+        <h2>Our Products</h2>
+        <div class="products-columns">
+            <div class="products-column">
+                <div class="product-card"
+                    onclick="openProductModal('PCC Panels','images/pcc.jpg','Main LT Distribution, Indoor/Outdoor panels, High fault withstand')">
+                    <img src="images/pcc.jpg">
+                    <h3>PCC Panels</h3>
+                </div>
+                <div class="product-card"
+                    onclick="openProductModal('APFC Panels','images/apfc.jpg','Auto capacitor banks, Power factor improvement, Energy saving')">
+                    <img src="images/apfc.jpg">
+                    <h3>APFC Panels</h3>
+                </div>
+                <div class="product-card"
+                    onclick="openProductModal('AMF Panels','images/amf.jpg','Automatic backup switching, Generator integration, Safety automation')">
+                    <img src="images/amf.jpg">
+                    <h3>AMF Panels</h3>
+                </div>
+            </div>
+            <div class="products-column">
+                <div class="product-card"
+                    onclick="openProductModal('MCC Panels','images/mcc.jpg','Motor starters, Feeder control, Automation ready')">
+                    <img src="images/mcc.jpg">
+                    <h3>MCC Panels</h3>
+                </div>
+                <div class="product-card"
+                    onclick="openProductModal('VFD Panels','images/vfd.jpg','Speed control, Energy efficiency, Soft start')">
+                    <img src="images/vfd.jpg">
+                    <h3>VFD Panels</h3>
+                </div>
+                <div class="product-card"
+                    onclick="openProductModal('Busduct Systems','images/busduct.jpg','Efficient distribution, Compact design, High current handling')">
+                    <img src="images/busduct.jpg">
+                    <h3>Busduct Systems</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+        <h2>Our Services</h2>
+        <div class="services-columns">
+            <div class="services-column">
+                <div class="service-card"
+                    onclick="toggleServiceDetail(this,'We design LT panels with high precision and safety standards.')">
+                    Panel Design & Engineering<div class="service-detail"></div>
+                </div>
+                <div class="service-card"
+                    onclick="toggleServiceDetail(this,'Manufacturing high-quality LT panels with tested components.')">
+                    LT Panel Manufacturing<div class="service-detail"></div>
+                </div>
+                <div class="service-card"
+                    onclick="toggleServiceDetail(this,'Complete onsite installation and commissioning of panels.')">
+                    Installation & Commissioning<div class="service-detail"></div>
+                </div>
+                <div class="service-card"
+                    onclick="toggleServiceDetail(this,'Preventive maintenance and support contracts.')">Annual
+                    Maintenance Contracts (AMC)<div class="service-detail"></div>
+                </div>
+            </div>
+            <div class="services-column">
+                <div class="service-card"
+                    onclick="toggleServiceDetail(this,'On-site troubleshooting and repair services.')">Troubleshooting &
+                    Repairs<div class="service-detail"></div>
+                </div>
+                <div class="service-card" onclick="toggleServiceDetail(this,'Upgrade old panels with new technology.')">
+                    Panel Upgradation & Retrofit<div class="service-detail"></div>
+                </div>
+                <div class="service-card"
+                    onclick="toggleServiceDetail(this,'Solutions to reduce energy consumption and improve efficiency.')">
+                    Energy Efficiency Solutions<div class="service-detail"></div>
+                </div>
+                <div class="service-card"
+                    onclick="toggleServiceDetail(this,'Technical support at your site whenever needed.')">On-site
+                    Support<div class="service-detail"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT + CEO -->
+    <section id="contact-ceo" class="section contact-ceo-section">
+        <div class="contact-column">
+            <!-- Contact Details Added -->
+            <div class="contact-info">
+                <p><strong>Phone:</strong> +91 9019523096</p>
+                <p><strong>Email:</strong> info@voltedgepowersystem.in</p>
+                <p><strong>Head Office Address:</strong> Electronic City, Bengaluru, 560100</p>
+                <p><strong>Services Operated In:</strong> Pune - Mumbai - Bengaluru</p>
+            </div>
+
+            <h2>Contact Us</h2>
+            <form action="https://formsubmit.co/info@voltedgepowersytem.in" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="text" name="phone" placeholder="Phone Number">
+                <textarea name="message" placeholder="Your Requirement"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="ceo-column">
+            <h2>Our Leadership</h2>
+            <img src="images/ceo.jpg" alt="CEO Preeti K" class="ceo-img">
+            <h3>Preeti K, CEO & Managing Director</h3>
+            <p class="quote">“We build reliability into every system we deliver.”</p>
+            <img src="images/logo.png" alt="VoltEdge Logo" class="footer-logo">
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919019523096" target="_blank" class="whatsapp-float">💬</a>
+    <footer class="site-footer">
+        &copy; 2026 Voltedge Power Systems. All Rights Reserved.
+    </footer>
+</body>
+
+</html>
